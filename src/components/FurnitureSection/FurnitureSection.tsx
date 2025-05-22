@@ -9,7 +9,7 @@ const FurnitureSection = () => {
     {
       id: 1,
       img: img1,
-      label: 'Furniture',
+      label: 'FURNITURE',
     },
     {
       id: 2,
