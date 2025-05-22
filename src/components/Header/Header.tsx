@@ -12,7 +12,7 @@ const Header = () => {
       {/* Top Bar - Hidden on mobile */}
       <div className={styles.topBar}>
         <div className={styles.contact}>
-          <img src={phone} alt='📞'></img><span>(225) 555-0118</span>
+        <span><img src={phone} alt='📞'></img>(225) 555-0118</span>
           <span><img src={mail} alt='✉️'></img> michelle.rivera@example.com</span>
         </div>&nbsp;
         <div className={styles.promo}>

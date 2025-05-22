@@ -27,12 +27,11 @@
   gap: 1.5rem;
 }
 
-.contact img {
-  width: 16px;
-  margin-right: 0.4rem;
+.contact span img {
+  display: inline-block;
   vertical-align: middle;
+  margin-right: 0.4rem;
 }
-
 .promo {
   text-align: center;
   flex: 1;
