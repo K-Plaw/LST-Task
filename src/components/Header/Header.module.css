@@ -1,0 +1,193 @@
+/* src/components/Header/Header.module.css */
+
+.header {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #fafafa;
+  color: #737373;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+/* ========== TOP BAR ========== */
+
+.topBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 5vw;
+  background-color: #23856d;
+  color: #fff;
+  font-size: 12px;
+  flex-wrap: wrap;
+}
+
+.contact {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.contact img {
+  width: 16px;
+  margin-right: 0.4rem;
+  vertical-align: middle;
+}
+
+.promo {
+  text-align: center;
+  flex: 1;
+  font-weight: 500;
+  color: #fff;
+}
+
+.social {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.social span {
+  margin-right: 0.5rem;
+  font-weight: 500;
+}
+
+.social img {
+  width: 16px;
+  height: 16px;
+}
+
+/* ========== NAVBAR ========== */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.2rem 5vw;
+  background-color: #fff;
+  border-bottom: 1px solid #ececec;
+  flex-wrap: wrap;
+}
+
+.brand {
+  font-size: 24px;
+  font-weight: 700;
+  color: #252b42;
+}
+
+.mobileNav {
+  display: flex;
+  align-items: center;
+}
+
+.menuToggle {
+  display: none;
+}
+
+.menuButton {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 24px;
+  height: 18px;
+  cursor: pointer;
+}
+
+.menuButton span {
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: #252b42;
+  transition: all 0.3s ease;
+}
+
+.navLinks {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+}
+
+.navLinks li a {
+  text-decoration: none;
+  color: #737373;
+  font-weight: 600;
+  transition: color 0.2s;
+}
+
+.navLinks li a:hover {
+  color: #23856d;
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  font-weight: 600;
+}
+
+.actions a {
+  text-decoration: none;
+  color: #23a6f0;
+  font-weight: 600;
+}
+
+/* ========== MEDIA QUERIES ========== */
+
+@media (max-width: 992px) {
+  .topBar {
+    display: none; /* Hide top bar on mobile */
+  }
+  
+  .navbar {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+  }
+  
+  .actions {
+    display: none; /* Hide actions on mobile */
+  }
+  
+  .navLinks {
+    position: fixed;
+    top: 70px;
+    left: -100%;
+    width: 100%;
+    flex-direction: column;
+    background-color: white;
+    padding: 1rem 0;
+    transition: left 0.3s ease;
+    gap: 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    z-index: 1000;
+  }
+  
+  .navLinks li {
+    padding: 0.8rem 2rem;
+    border-bottom: 1px solid #ececec;
+  }
+  
+  .navLinks li a {
+    display: block;
+    width: 100%;
+  }
+  
+  .menuButton {
+    display: flex;
+  }
+  
+  .menuToggle:checked ~ .navLinks {
+    left: 0;
+  }
+}
+
+@media (max-width: 576px) {
+  .navbar {
+    padding: 1rem;
+  }
+  
+  .brand {
+    margin-bottom: 0;
+  }
+}

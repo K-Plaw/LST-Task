@@ -1,0 +1,91 @@
+.footer {
+    background-color: #f9f9f9;
+    padding: 2rem 6rem;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  .topRow {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .logo {
+    font-weight: bold;
+    font-size: 24px;
+    color: #252b42;
+  }
+  
+  .socials {
+    display: flex;
+    gap: 1rem; /* space between icons */
+  }
+  
+  .socials a img {
+    width: 24px;
+    height: 24px;
+    transition: transform 0.2s ease;
+  }
+  
+  .socials a img:hover {
+    transform: scale(1.1);
+  }
+  
+  .columns {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 0;
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+  
+  .columns div h4 {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+  
+  .columns div p {
+    font-size: 14px;
+    color: #737373;
+    margin-bottom: 0.5rem;
+    cursor: pointer;
+  }
+  
+  .subscribe {
+    max-width: 250px;
+  }
+  
+  .inputGroup {
+    display: flex;
+    margin-bottom: 0.5rem;
+  }
+  
+  .inputGroup input {
+    flex: 1;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-right: none;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+  }
+  
+  .inputGroup button {
+    padding: 0.5rem 1rem;
+    background-color: #2a7cc7;
+    color: #fff;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+  }
+  
+  .bottomBar {
+    text-align: left;
+    padding-top: 1rem;
+    border-top: 1px solid #eee;
+    font-size: 13px;
+    color: #737373;
+  }
+  

@@ -1,0 +1,81 @@
+.container {
+    display: flex;
+    justify-content: center;
+    padding: 100px 20px;
+    background-color: #fff;
+  }
+  
+  .innerWrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    max-width: 1200px;
+    width: 100%;
+  }
+  
+  .testimonial {
+    flex: 1;
+    min-width: 400px;
+    text-align: center;
+  }
+  
+  .testimonial h2 {
+    font-size: 28px;
+    font-weight: 700;
+    color: #252B42;
+    margin-bottom: 30px;
+  }
+  
+  .avatar {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin: 0 auto 20px;
+    object-fit: cover;
+  }
+  
+  .stars {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-bottom: 20px;
+  }
+  
+  .review {
+    font-size: 16px;
+    color: #737373;
+    max-width: 350px;
+    margin: 0 auto 20px;
+    line-height: 1.7;
+  }
+  
+  .name {
+    color: #23A6F0;
+    font-weight: 600;
+    font-size: 16px;
+    margin-bottom: 6px;
+  }
+  
+  .role {
+    font-size: 14px;
+    color: #252B42;
+    font-weight: 500;
+  }
+  
+  .grid {
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(3, 130px);
+    grid-template-rows: repeat(3, 130px);
+    gap: 14px;
+  }
+  
+  .gridImg {
+    width: 130px;
+    height: 130px;
+    object-fit: cover;
+    border-radius: 6px;
+  }
+  
