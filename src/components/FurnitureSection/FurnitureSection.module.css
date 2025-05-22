@@ -1,11 +1,10 @@
-/* FurnitureSection.module.css */
 .container {
   display: flex;
   width: 100%;
   max-width: 1146px;
   height: 776px;
   gap: 8px;
-  padding: 80px 0;
+  padding: 80px 20px; /* ✅ Add side padding */
   margin: 0 auto;
 }
 
@@ -76,27 +75,41 @@ a {
   color: inherit;
 }
 
+/* Tablet and below adjustments */
 @media (max-width: 1024px) {
   .container {
     flex-direction: column;
     height: auto;
   }
-  
+
   .box1, .rightColumn {
     width: 100%;
   }
-  
+
   .box1 {
     height: 400px;
   }
 }
 
+/* ✅ Mobile: make all boxes the same size and stacked */
 @media (max-width: 768px) {
+  .container {
+    padding: 40px 16px; /* smaller padding for mobile */
+  }
+
+  .box1, .box2, .box3, .box4 {
+    height: 200px;
+  }
+
+  .rightColumn {
+    flex-direction: column;
+  }
+
   .box3And4Container {
     flex-direction: column;
   }
-  
-  .box3, .box4 {
-    height: 200px;
+
+  .card {
+    height: 100%;
   }
 }
