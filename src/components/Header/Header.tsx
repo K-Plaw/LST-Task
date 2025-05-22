@@ -4,7 +4,7 @@ import mail from '../../assets/socials/email.svg';
 import IG from '../../assets/socials/Instagram.svg';
 import FB from '../../assets/socials/facebook.svg';
 import YT from '../../assets/socials/YouTube.svg';
-import tweet from '../../assets/socials/Twitter.svg';
+import tweet from '../../assets/socials/twitter.svg';
 
 const Header = () => {
   return (

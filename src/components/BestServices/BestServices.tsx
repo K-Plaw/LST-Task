@@ -1,6 +1,6 @@
 import styles from './BestServices.module.css';
 import img1 from '../../assets/services/easy-wins.svg';
-import img2 from '../../assets/services/concrete.svg';
+import img2 from '../../assets/services/Concrete.svg';
 import img3 from '../../assets/services/hack-growth.svg';
 
 
