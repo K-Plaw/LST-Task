@@ -91,25 +91,38 @@ a {
   }
 }
 
-/* ✅ Mobile: make all boxes the same size and stacked */
+/* Mobile: all boxes the same size and stacked */
 @media (max-width: 768px) {
   .container {
-    padding: 40px 16px; /* smaller padding for mobile */
-  }
-
-  .box1, .box2, .box3, .box4 {
-    height: 200px;
-  }
-
-  .rightColumn {
     flex-direction: column;
+    height: auto;
+    padding: 40px 2px;
+    align-items: center; /* ✅ Center-align all direct children */
   }
 
+  .box1,
+  .box2,
+  .box3,
+  .box4 {
+    display: flex; /* ✅ Make these containers flex to center child card */
+    justify-content: center;
+    width: 100%;
+    height: auto;
+  }
+
+  .rightColumn,
   .box3And4Container {
     flex-direction: column;
+    gap: 16px;
   }
 
   .card {
+    height: 500px;
+    width: 500px;
+  }
+
+  .card img {
     height: 100%;
+    width: 100%;
   }
 }
