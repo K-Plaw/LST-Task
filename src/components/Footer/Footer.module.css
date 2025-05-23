@@ -49,6 +49,7 @@
   
   .columns div p {
     font-size: 14px;
+    font-weight: normal;
     color: #737373;
     margin-bottom: 0.5rem;
     cursor: pointer;

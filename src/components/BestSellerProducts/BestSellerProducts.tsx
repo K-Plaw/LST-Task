@@ -23,7 +23,7 @@ const BestSellerProducts = () => {
         {isLoading ? (
             <p>Loading...</p>
         ) : isError ? (
-            <p>Something went wrong.</p>
+            <p>Something went wrong. Please reload and try again.</p>
         ) : (
             <>
             <div className={styles.grid}>

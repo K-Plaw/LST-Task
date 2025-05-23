@@ -24,31 +24,31 @@ const Footer = () => {
       <div className={styles.columns}>
         <div>
           <h4>Company Info</h4>
-          <p>About Us</p>
-          <p>Carrier</p>
-          <p>We are hiring</p>
-          <p>Blog</p>
+          <a href="#"><p>About Us</p></a>
+          <a href='#'><p>Carrier</p></a>
+          <a href='#'><p>We are hiring</p></a>
+          <a href='#'><p>Blog</p></a>
         </div>
         <div>
           <h4>Legal</h4>
-          <p>About Us</p>
-          <p>Carrier</p>
-          <p>We are hiring</p>
-          <p>Blog</p>
+          <a href='#'><p>About Us</p></a>
+          <a href='#'><p>Carrier</p></a>
+          <a href='#'><p>We are hiring</p></a>
+          <a href='#'><p>Blog</p></a>
         </div>
         <div>
           <h4>Features</h4>
-          <p>Business Marketing</p>
-          <p>User Analytic</p>
-          <p>Live Chat</p>
-          <p>Unlimited Support</p>
+          <a href='#'><p>Business Marketing</p></a>
+          <a href='#'><p>User Analytic</p></a>
+          <a href='#'><p>Live Chat</p></a>
+          <a href='#' ><p>Unlimited Support</p></a>
         </div>
         <div>
-          <h4>Resources</h4>
-          <p>IOS & Android</p>
-          <p>Watch a Demo</p>
-          <p>Customers</p>
-          <p>API</p>
+        <h4>Resources</h4>
+        <a href='#'><p>IOS & Android</p></a>
+        <a href='#'><p>Watch a Demo</p></a>
+        <a href='#'><p>Customers</p></a>
+        <a href='#'><p>API</p></a>
         </div>
         <div className={styles.subscribe}>
           <h4>Get In Touch</h4>

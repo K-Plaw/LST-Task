@@ -8,7 +8,7 @@
   line-height: 1.6;
 }
 
-/* ========== TOP BAR ========== */
+/* ~~~~~~~~~~ TOP BAR ~~~~~~~~~~~ */
 
 .topBar {
   display: flex;
@@ -50,9 +50,14 @@
   font-weight: 500;
 }
 
-.social img {
+.social a img {
   width: 16px;
   height: 16px;
+  transition: transform 0.2s ease;
+}
+
+.social a img:hover {
+  transform: scale(1.1);
 }
 
 /* ========== NAVBAR ========== */
@@ -131,11 +136,16 @@
   font-weight: 600;
 }
 
-/* ========== MEDIA QUERIES ========== */
+.actions a img {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 0.4rem;
+}
+/* ¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬ RESPONSIVENESS {MEDIA QUERIES} ¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬ */
 
 @media (max-width: 992px) {
   .topBar {
-    display: none; /* Hide top bar on mobile */
+    display: none; /* Hides top bar on mobile */
   }
   
   .navbar {
@@ -145,7 +155,7 @@
   }
   
   .actions {
-    display: none; /* Hide actions on mobile */
+    display: none; /* Hides actions on mobile */
   }
   
   .navLinks {

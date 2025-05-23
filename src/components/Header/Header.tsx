@@ -5,6 +5,10 @@ import IG from '../../assets/socials/Instagram.svg';
 import FB from '../../assets/socials/facebook.svg';
 import YT from '../../assets/socials/YouTube.svg';
 import tweet from '../../assets/socials/twitter.svg';
+import person from '../../assets/icons/person.png'
+import search from '../../assets/icons/search.png'
+import heart from '../../assets/icons/heart.png'
+import cart from '../../assets/icons/cart.png'
 
 const Header = () => {
   return (
@@ -12,8 +16,8 @@ const Header = () => {
       {/* Top Bar - Hidden on mobile */}
       <div className={styles.topBar}>
         <div className={styles.contact}>
-        <span><img src={phone} alt='📞'></img>(225) 555-0118</span>
-          <span><img src={mail} alt='✉️'></img> michelle.rivera@example.com</span>
+        <span><img src={phone} alt='📞' />(225) 555-0118</span>
+          <span><img src={mail} alt='✉️' /> michelle.rivera@example.com</span>
         </div>&nbsp;
         <div className={styles.promo}>
           <span>Follow Us and get a chance to win 80% off</span>
@@ -45,9 +49,10 @@ const Header = () => {
           </ul>
         </div>
         <div className={styles.actions}>
-          <a href="#">👤 Login / Register</a>
-          <a href="#">🛒 1</a>
-          <a href="#">🤍 1</a>
+          <a href="#"><img src={person} alt='👤'/>Login / Register</a>
+          <a href="#"><img src={search} alt='s'/> 1</a>
+          <a href="#"><img src={cart} alt='🛒'/> 1</a>
+          <a href="#"><img src={heart} alt='🤍'/> 1</a>
         </div>
       </nav>
     </header>
