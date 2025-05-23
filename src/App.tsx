@@ -1,5 +1,5 @@
 //import React from 'react';
-import FurnitureSection from './components/FurnitureSection/FurnitureSection';
+import HeroSection from './components/FurnitureSection/HeroSection';
 import Header from './components/Header/Header';
 import BestSellerProducts from './components/BestSellerProducts/BestSellerProducts';
 import BestServices from './components/BestServices/BestServices';
@@ -12,7 +12,7 @@ function App() {
   return (
     <div>
       <Header />
-      <FurnitureSection /> <br />
+      <HeroSection /> <br />
       <BestSellerProducts /> <br />
       <BestServices /> <br />
       <FeaturedPosts /> <br />
