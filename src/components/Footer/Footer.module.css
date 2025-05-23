@@ -89,3 +89,35 @@
     color: #737373;
   }
   
+  /* MOBILE VIEW */
+  @media (max-width: 768px) {
+    .topRow {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 1rem;
+    }
+  
+    .columns {
+      flex-direction: column;
+      gap: 2rem;
+    }
+  
+    .bottomBar {
+      text-align: center;
+    }
+  
+    .inputGroup {
+      width: 100%;
+    }
+  
+    .inputGroup input {
+      padding: 0.75rem;
+      font-size: 1rem;
+    }
+  
+    .inputGroup button {
+      padding: 0.75rem 1.25rem;
+      font-size: 1rem;
+    }
+  }
+  

@@ -60,3 +60,35 @@
     line-height: 20px;
   }
   
+  /* MOBILE DESIGN */
+  @media (max-width: 768px) {
+    .services {
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+    }
+  
+    .card {
+      width: 90%;
+      max-width: none;
+      padding: 20px;
+      box-sizing: border-box;
+    }
+  
+    .card img {
+      width: 64px;
+      height: 64px;
+      margin-bottom: 20px;
+    }
+  
+    .card h3 {
+      font-size: 20px;
+    }
+  
+    .card p {
+      font-size: 15px;
+      max-width: 280px;
+      margin: 0 auto;
+    }
+  }
+  
