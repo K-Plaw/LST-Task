@@ -1,4 +1,4 @@
-import styles from './FurnitureSection.module.css';
+import styles from './HeroSection.module.css';
 import img1 from '../../assets/furniture/card-cover-5.png';
 import img2 from '../../assets/furniture/card-cover-4.png';
 import img3 from '../../assets/furniture/card-cover-6.png';

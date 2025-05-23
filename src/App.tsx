@@ -1,5 +1,5 @@
 //import React from 'react';
-import HeroSection from './components/FurnitureSection/HeroSection';
+import HeroSection from './components/HeroSection/HeroSection';
 import Header from './components/Header/Header';
 import BestSellerProducts from './components/BestSellerProducts/BestSellerProducts';
 import BestServices from './components/BestServices/BestServices';
