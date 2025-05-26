@@ -1,5 +1,4 @@
-/* src/components/Header/Header.module.css */
-
+/* ~~~~~~~~~~ HEADER ~~~~~~~~~~~ */
 .header {
   font-family: 'Montserrat', sans-serif;
   background-color: #fafafa;
@@ -9,7 +8,6 @@
 }
 
 /* ~~~~~~~~~~ TOP BAR ~~~~~~~~~~~ */
-
 .topBar {
   display: flex;
   justify-content: space-between;
@@ -32,6 +30,7 @@
   vertical-align: middle;
   margin-right: 0.4rem;
 }
+
 .promo {
   text-align: center;
   flex: 1;
@@ -61,7 +60,6 @@
 }
 
 /* ========== NAVBAR ========== */
-
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -83,6 +81,7 @@
   align-items: center;
 }
 
+/* Menu button (hamburger) */
 .menuToggle {
   display: none;
 }
@@ -101,10 +100,44 @@
   width: 100%;
   height: 2px;
   background-color: #252b42;
-  transition: all 0.3s ease;
 }
 
+/* Mobile nav menu */
 .navLinks {
+  display: none;
+  list-style: none;
+  flex-direction: column;
+  position: fixed;
+  top: 70px;
+  left: -100%;
+  width: 100%;
+  background-color: white;
+  padding: 1rem 0;
+  gap: 0;
+  transition: left 0.3s ease;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  z-index: 1000;
+}
+
+.menuToggle:checked ~ .navLinks {
+  left: 0;
+}
+
+.navLinks li {
+  padding: 0.8rem 2rem;
+  border-bottom: 1px solid #ececec;
+}
+
+.navLinks li a {
+  display: block;
+  width: 100%;
+  text-decoration: none;
+  color: #737373;
+  font-weight: 600;
+}
+
+/* Desktop nav menu */
+.navLinksD {
   display: flex;
   list-style: none;
   gap: 2rem;
@@ -112,17 +145,28 @@
   padding: 0;
 }
 
-.navLinks li a {
+.navLinksD li a {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
   text-decoration: none;
   color: #737373;
   font-weight: 600;
   transition: color 0.2s;
 }
 
-.navLinks li a:hover {
+.navLinksD li a img {
+  height: 8px;
+  width: auto;
+  margin: 0;
+}
+
+.navLinksD li a:hover {
   color: #23856d;
 }
 
+
+/* ~~~~~~~~~~ ACTIONS ~~~~~~~~~~~ */
 .actions {
   display: flex;
   align-items: center;
@@ -141,62 +185,40 @@
   vertical-align: middle;
   margin-right: 0.4rem;
 }
-/* ¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬ RESPONSIVENESS {MEDIA QUERIES} ¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬ */
 
+/* ¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬ RESPONSIVENESS ¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬ */
 @media (max-width: 992px) {
   .topBar {
-    display: none; /* Hides top bar on mobile */
+    display: none;
   }
-  
-  .navbar {
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 1rem 2rem;
-  }
-  
+
   .actions {
-    display: none; /* Hides actions on mobile */
+    display: none;
   }
-  
+
   .navLinks {
-    position: fixed;
-    top: 70px;
-    left: -100%;
-    width: 100%;
-    flex-direction: column;
-    background-color: white;
-    padding: 1rem 0;
-    transition: left 0.3s ease;
-    gap: 0;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    z-index: 1000;
+    display: flex;
   }
-  
-  .navLinks li {
-    padding: 0.8rem 2rem;
-    border-bottom: 1px solid #ececec;
+
+  .navLinksD {
+    display: none;
   }
-  
-  .navLinks li a {
-    display: block;
-    width: 100%;
-  }
-  
+
   .menuButton {
     display: flex;
   }
-  
-  .menuToggle:checked ~ .navLinks {
-    left: 0;
-  }
 }
 
-@media (max-width: 576px) {
-  .navbar {
-    padding: 1rem;
+@media (min-width: 993px) {
+  .navLinks {
+    display: none;
   }
-  
-  .brand {
-    margin-bottom: 0;
+
+  .menuButton {
+    display: none;
+  }
+
+  .navLinksD {
+    display: flex;
   }
 }

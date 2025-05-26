@@ -21,6 +21,28 @@
     color: #737373;
     margin-bottom: 3rem;
   }
+
+  .errorBox {
+    margin-top: 2rem;
+    color: #d32f2f;
+  }
+  
+  .retryBtn {
+    margin-top: 1rem;
+    padding: 0.7rem 2rem;
+    background-color: #fff;
+    color: #23A6F0;
+    border: 1px solid #23A6F0;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s, color 0.2s;
+  }
+  
+  .retryBtn:hover {
+    background-color: #23A6F0;
+    color: white;
+  }
+  
   
   .grid {
     display: grid;
